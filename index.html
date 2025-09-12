@@ -87,9 +87,9 @@
               </li>
               <li>
                 <a
-                  href="#message-us_section"
+                  href="#contact-us_section"
                   class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Message Us</a
+                  >Contact Us</a
                 >
               </li>
               <li></li>
@@ -295,8 +295,8 @@
     <!-- Bagian Section Portofolio Mulai -->
     <!-- Portofolio -->
     <section
-      id="portfolio"
-      class="min-h-[578px] flex items-center justify-center bg-white"
+      id="portofolio_section"
+      class="min-h-screen flex items-center justify-center bg-white"
     >
       <div class="max-w-6xl mx-auto px-6 w-full">
         <h2
@@ -374,8 +374,89 @@
         </div>
       </div>
     </section>
+    <hr />
 
     <!-- Bagian Section Portofolio Selesai -->
+
+    <!-- Bagian Section Message Us Mulai -->
+    <section
+      id="contact-us_section"
+      class="min-h-screen flex items-center justify-center bg-gray-100"
+    >
+      <div class="max-w-4xl mx-auto px-6 w-full">
+        <h2
+          class="mb-4 text-4xl text-center tracking-tight font-extrabold text-gray-900 dark:text-white"
+        >
+          Contact Us
+        </h2>
+        <p class="mt-2 text-center text-gray-600">
+          Have questions or would like to request a service? Please send a
+          message below.
+        </p>
+
+        <form
+          id="contactForm"
+          class="mt-8 grid gap-4 bg-white p-6 rounded-lg shadow"
+        >
+          <!-- Nama -->
+          <div>
+            <input
+              type="text"
+              id="name"
+              placeholder="name"
+              class="p-3 rounded border w-full focus:ring-2 focus:ring-indigo-400"
+              required
+            />
+            <small id="error-name" class="text-red-500 text-sm hidden"
+              >name cannot be empty</small
+            >
+          </div>
+          <!-- Email -->
+          <div>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              class="p-3 rounded border w-full focus:ring-2 focus:ring-indigo-400"
+              required
+            />
+            <small id="error-email" class="text-red-500 text-sm hidden"
+              >Enter a valid email</small
+            >
+          </div>
+          <!-- Pesan -->
+          <div>
+            <textarea
+              id="message"
+              placeholder="Pesan"
+              class="p-3 rounded border w-full focus:ring-2 focus:ring-indigo-400"
+              rows="4"
+              required
+            ></textarea>
+            <small id="error-message" class="text-red-500 text-sm hidden"
+              >message cannot be empty</small
+            >
+          </div>
+
+          <!-- Tombol Submit -->
+          <button
+            type="submit"
+            class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+          >
+            Send message
+          </button>
+        </form>
+
+        <!-- Notifikasi sukses -->
+        <div
+          id="success-message"
+          class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded"
+        >
+          ✅ Pesan berhasil dikirim!
+        </div>
+      </div>
+    </section>
+    <!-- Bagian Section Mesasge Us Selesai -->
 
     <script src="js/script.js"></script>
   </body>
